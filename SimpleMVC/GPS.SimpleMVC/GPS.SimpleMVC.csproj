@@ -59,6 +59,7 @@
     <Compile Include="Views\ISimpleView.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="GPS.SimpleMVC.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
