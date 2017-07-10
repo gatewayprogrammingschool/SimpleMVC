@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GPS.SimpleDI, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GPS.SimpleDI.1.0.0.2\lib\net452\GPS.SimpleDI.dll</HintPath>
+    <Reference Include="GPS.SimpleDI, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GPS.SimpleDI.1.0.0.3\lib\net452\GPS.SimpleDI.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -48,12 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\ISearchCriteria.cs" />
+    <Compile Include="Adapters\ISearchNode.cs" />
+    <Compile Include="Adapters\SearchConnectors.cs" />
+    <Compile Include="Adapters\SearchCriteria.cs" />
+    <Compile Include="Adapters\SearchCriteriaTypes.cs" />
+    <Compile Include="Adapters\SearchNode.cs" />
     <Compile Include="Controllers\SimpleControllerBase.cs" />
     <Compile Include="DI\JsonLoadModelAdapterDependencyLoader.cs" />
     <Compile Include="DI\LoadModelAdapterInjector.cs" />
-    <Compile Include="Models\LoadModelAdapterBase.cs" />
-    <Compile Include="Models\IModelAdapterDataProvider.cs" />
-    <Compile Include="Models\ISearchNode.cs" />
+    <Compile Include="Adapters\LoadModelAdapterBase.cs" />
+    <Compile Include="Adapters\IModelAdapterDataProvider.cs" />
+    <Compile Include="Models\IModelBase.cs" />
     <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\ISimpleView.cs" />

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GPS.SimpleDI;
 using System.Reflection;
 using System.Globalization;
+using GPS.SimpleMVC.Adapters;
 using GPS.SimpleMVC.Models;
 
 namespace GPS.SimpleMVC.DI
@@ -42,7 +43,7 @@ namespace GPS.SimpleMVC.DI
                         ptype,
                         BindingFlags.Public | BindingFlags.Instance,
                         null,
-                        new[] { (parameters[0].Value as string).ToCharArray() },
+                        new[] { (parameters[0].Value as string)?.ToCharArray() },
                         CultureInfo.CurrentCulture
                     );
 
@@ -53,9 +54,9 @@ namespace GPS.SimpleMVC.DI
                 new[] { param1 },
                 CultureInfo.CurrentCulture);
 
-            if (obj is LoadModelAdapterBase<ModelBase>)
+            if (obj is LoadModelAdapterBase<IModelBase>)
             {
-                return obj;
+                return obj as LoadModelAdapterBase<IModelBase>;
             }
 
             throw new ApplicationException("Object is not of type T");
@@ -79,7 +80,7 @@ namespace GPS.SimpleMVC.DI
 
             if (obj is LoadModelAdapterBase<ModelBase>)
             {
-                return obj;
+                return ((LoadModelAdapterBase<ModelBase>)obj);
             }
 
             throw new ApplicationException("Object is not of type T");

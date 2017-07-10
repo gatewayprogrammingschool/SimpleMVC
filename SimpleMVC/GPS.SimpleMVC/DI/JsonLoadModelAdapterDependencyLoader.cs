@@ -11,7 +11,7 @@ namespace GPS.SimpleMVC.DI
 {
     public class JsonLoadModelAdapterDependencyLoader : IDefinitionLoader<LoadModelAdapterInjector>
     {
-        private string _json;
+        private readonly string _json;
 
         public JsonLoadModelAdapterDependencyLoader(string json)
         {
