@@ -32,6 +32,21 @@ are defined to manage either the entirety of the application (possibly as
 a singleton), or more granularly as the controller for a specific functional
 area (such as a Member controller, or a Book controller).
 
+## Where can I get it?
+
+SimpleMVC is available on Nuget.org for easy inclusion in your .Net application
+from within Visual Studio.  Simply open the Package Manager Console and type:
+
+  install-package GPS.SimpleMVC
+  
+ That's it.  Nuget will go get the dependencies (in this case Newtonsoft.JSON
+ and GPS.SimpleDI) as well as the 
+ [SimpleMVC](https://www.nuget.org/packages/GPS.SimpleMVC/) package and add 
+ them to your solution.
+ 
+ Alternatively, you may download the package from
+ [GitHub](https://github.com/gatewayprogrammingschool/SimpleMVC/releases).
+
 ## Where can I get help?
 You can log and track issues on [GitHub](https://github.com/gatewayprogrammingschool/SimpleMVC/issues)
 or you can send an email to ninja@gatewayprogramming.school.
