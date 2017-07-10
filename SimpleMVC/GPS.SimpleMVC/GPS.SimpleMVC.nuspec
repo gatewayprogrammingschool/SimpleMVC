@@ -1,6 +1,6 @@
 <package>
   <metadata>
-    <id>GPS.SimpleDI</id>
+    <id>GPS.SimpleMVC</id>
     <version>$Version$</version>
     <authors>Payton Byrd</authors>
     <owners>Gateway Programming School, Inc.</owners>
@@ -11,10 +11,10 @@
     <description>Simple MVC is a standard Model-View-Controller patterned framework for creating maintable and powerful projects, large and small.</description>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="10.0.0.0" />
-      <dependency id="SimpleDI" version="1.0.0.2" />
+      <dependency id="SimpleDI" version="1.0.0.5" />
     </dependencies>
   </metadata>
   <files>
-    <file src=".\bin\Release\GPS.SimpleMVC.*" target="lib\net452" />
+    <file src=".\bin\Release\GPS.SimpleMVC.*" target="lib\net452" exclude="**\*.nupkg" />
   </files>
 </package>

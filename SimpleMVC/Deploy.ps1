@@ -10,7 +10,7 @@ function Deploy-Package
     $proj = $SolutionDir + '\' + $Namespace + '\' + $Namespace + '.csproj'
 	$assm = $BuildDir + '\' + $Assembly
 
-    C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe $proj /p:Configuration=Release /p:RunOctoPack=true
+&    "F:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\amd64\msbuild.exe"  $proj /p:Configuration=Release /p:RunOctoPack=true
 
     #$item = Get-ChildItem -Path $assm
 	
