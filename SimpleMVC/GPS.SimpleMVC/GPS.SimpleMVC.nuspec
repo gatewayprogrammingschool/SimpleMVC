@@ -11,7 +11,7 @@
     <description>Simple MVC is a standard Model-View-Controller patterned framework for creating maintable and powerful projects, large and small.</description>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="10.0.0.0" />
-      <dependency id="SimpleDI" version="1.0.0.5" />
+      <dependency id="GPS.SimpleDI" version="1.0.0.5" />
     </dependencies>
   </metadata>
   <files>
