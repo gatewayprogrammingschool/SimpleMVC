@@ -1,0 +1,9 @@
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    GPS.SimpleDI (1.0.0.7)
+      Newtonsoft.Json (>= 10.0)
+    MSTest.TestAdapter (1.1.11) - restriction: >= net452
+    MSTest.TestFramework (1.1.11) - restriction: >= net452
+    Newtonsoft.Json (10.0.1)
+    NuGet.CommandLine (4.1)
+    OctoPack (3.6.1) - restriction: >= net452

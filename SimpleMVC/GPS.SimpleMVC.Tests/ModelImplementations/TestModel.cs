@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
-using GenericExtensionMethods;
 using GPS.SimpleDI;
 using GPS.SimpleMVC.Models;
 using GPS.SimpleMVC.Tests.AdapterImplementations;
