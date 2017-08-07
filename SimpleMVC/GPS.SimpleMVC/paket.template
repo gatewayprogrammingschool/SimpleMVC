@@ -1,11 +1,11 @@
 type project
-licenseUrl https://github.com/gatewayprogrammingschool/SimpleDI/blob/master/LICENSE
-projectUrl http://simpledi.gatewayprogramming.school/
+licenseUrl https://github.com/gatewayprogrammingschool/SimpleMVC/blob/master/LICENSE
+projectUrl http://simplemvc.gatewayprogramming.school/
 iconUrl http://gatewayprogramming.school/gps.png
 owners Gateway Programming School, Inc.
 authors The Sharp Ninja
 copyright Copyright 2017 (c) Gateway Programming School, Inc.
-summary Simple Dependency Injection framework.  Can use JSON files by default, or create your own object definition strategy.
-tags dependency-inject
+summary Simple Model-View-Controller framework. 
+tags mvc model-view-controller
 include-pdbs true
 
